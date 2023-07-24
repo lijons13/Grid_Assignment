@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,250px);
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+img{
+    border-radius: 10px;
+    width:100%;
+    height:100%;
+}
+.box-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.box-2{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.box-3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.box-4{
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+.box-5{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.box-6{
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box-1"><img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt=""></div>
+        <div class="box-2"><img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp" alt=""></div>
+        <div class="box-3"><img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp" alt=""></div>
+        <div class="box-4"><img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp" alt=""></div>
+        <div class="box-5"><img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt=""></div>
+        <div class="box-6"><img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" alt=""></div>
+    </div>
+</body>
+</html>

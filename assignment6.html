@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:100vw;
+            border:1px solid black;
+            height:80%;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            
+        }
+        .box-container{
+            background-color: #14b4ac;
+            width:95%;
+            display: grid;
+            justify-content: center;
+            gap:10px;
+            grid-template-columns: repeat(8,1fr);
+            grid-template-rows: 150px 100px 100px 100px 100px 100px 100px;
+            margin-bottom: 10px;
+        }
+        .ck{
+            background-color: #b42828;
+            color: aliceblue;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            padding:2px;
+        }
+        .t{
+            border:1px dotted black;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+        .k{
+            background-color: #bb18db;
+        }
+        .item-10{
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .item-11{
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .item-12{
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        .item-13{
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+        .item-14{
+            grid-row-start: 7;
+            grid-row-end: 8;
+        }
+        .b{
+            background-color: #a1c210;
+        }
+        .item-19{
+            grid-row-start: 2;
+            grid-row-end: 8;
+            grid-column-start: 6;
+            grid-column-end: 7;
+            
+        }
+        .item-31{
+            grid-row-start: 7;
+            grid-row-end: 8;
+            grid-column-start: 7;
+            grid-column-end: 9;
+            background-color: #04570b;
+        }
+        .aqz{
+            color:aliceblue;
+            font-size: 25px;
+        }
+        .aq{
+            font-size: 30px;
+        }
+        .tt{
+            display: grid;
+            justify-content: center;
+            align-content: center; 
+            padding-top: 10px;
+        }
+        .item-20{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 7;
+            grid-column-end: 9;
+            color: #b42828;
+            
+        }
+        .item-26{
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 7;
+            grid-column-end: 9;
+        }
+        .item-30{
+            grid-row-start: 6;
+            grid-row-end: 7;
+            grid-column-start: 7;
+            grid-column-end: 9;
+            background-color: #fff;
+
+        }
+        .item-21{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .item-32{
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 5;
+            grid-column-end: 6;
+        }
+        .item-33{
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+        }
+        .item-42{
+            grid-row-start: 7;
+            grid-row-end: 8;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .item-40{
+            grid-row-start: 7;
+            grid-row-end: 8;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        .item-41{
+            grid-row-start: 7;
+            grid-row-end: 8;
+            grid-column-start: 5;
+            grid-column-end: 6;
+        }
+        .item-43{
+            grid-row-start: 6;
+            grid-row-end: 7;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .item-44{
+            grid-row-start: 6;
+            grid-row-end: 7;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .aa{
+            background-color: #0a8b9c;
+            color: #fff;
+        }
+        .bb{
+            background-color: #eee017;
+            color: black;
+        }
+        .cc{
+            background-color: #540972;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">School Timetable
+        </h1>
+        <div class="box-container">
+           <div class="t item-1 ck">TIME</div>
+           <div class="t item-2 ck">08:00AM - 09:00 AM</div>
+           <div class="t item-3 ck">09:00 AM - 10:00AM</div>
+           <div class="t item-4 ck">10:00AM - 11:00AM</div>
+           <div class="t item-5 ck">11:00AM - 12:00PM</div>
+           <div class="t item-6 ck">12:00PM - 02:00PM</div>
+           <div class="t item-7 ck">02:00PM - 03:00PM</div>
+           <div class="t item-8 ck">03:00PM - 04:00pm</div>
+           <div class="t item-9 k">Monday</div>
+           <div class="t item-10 k">Tuesday</div>
+           <div class="t item-11 k" >Wednesday</div>
+           <div class="t item-12 k">Thursday</div>
+           <div class="t item-13 k">Friday</div>
+           <div class="t item-14 k ">Saturday</div>
+           <div class="t item-15 b">English</div>
+           <div class="t item-16 b">Biology</div>
+           <div class="t item-17 b">Physics</div>
+           <div class="t item-18 b">Chemistry</div>
+           <div class="t item-19 "><div class="aq tt">L</div>
+           <div class="aq tt">U</div>
+           <div class="aq tt">N</div>
+           <div class="aq tt">C</div>
+           <div class="aq  tt">H</div>
+           <div class="aqz tt">Break</div></div>
+           <div class="t item-20 bb">Chemistry Lab</div>
+           <div class="t item-21 aa">Biology Lab</div>
+           <div class="t item-22 b">Physics</div>
+           <div class="t item-23 b">Chemistry</div>
+           <div class="t item-24 b">English</div>
+           <div class="t item-25 b">Biology</div>
+           <div class="t item-26 cc">Gamers</div>
+           <div class="t item-27 b">English</div>
+           <div class="t item-28 b">Biology</div>
+           <div class="t item-29 b">Physics</div>
+           <div class="t item-30 bb">Physics Lab</div>
+           <div class="t item-31">LET OFF</div>
+           <div class="t item-32 b">Chemistry</div>
+           <div class="t item-33 aa ">Biology Lab</div>
+           <div class="t item-34 b">Physics</div>
+           <div class=" t item-35 b">Chemistry</div>
+           <div class="t item-36 b">English</div>
+           <div class="t item-37 b">Biology</div>
+           <div class="t item-38 b">Physics</div>
+           <div class="t item-39 b">Chemistry</div>
+           <div class="t item-40 b">Physics</div>
+           <div class="t item-41 b">Chemistry</div>
+           <div class="t item-42 aa"> Biology Lab</div>
+           <div class="item-43 t b">English</div>
+           <div class="item-44 t b">Biology</div>
+    </div>
+</body>
+</html>

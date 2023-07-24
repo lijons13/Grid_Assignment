@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    display: grid;
+    max-width:1300px;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 800px;
+    
+    border: 1px solid black;
+    margin:auto;
+
+}
+
+.small-container {
+    background-color:#ffffff ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 30px;
+    
+    
+   
+}
+.big-container{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.imagesection{
+    
+    background-color: #2f96af;
+    border: 4px solid rgb(114, 208, 231);
+    
+}
+.imagesection img{
+    height:100%;
+    width:85%;
+}
+.textsection{
+    background-color: #ffffff;
+    padding:0px 50px;
+   
+}
+.textsection h1{
+    font-size: 40px;
+
+}
+.textsection p{
+    font-family:'Courier New', Courier, monospace;
+}
+.textsection button{
+    padding:10px;
+    color: azure;
+    background-color: #000000;
+}
+
+
+.but{
+    background-color: transparent;
+    border:none;
+    outline: none;
+    padding:10px;
+    font-size:20px;
+
+    
+}
+.but:hover{
+    background-color: #ca7b7b;
+}
+.but4{
+    background-color: #1c3485;
+    color:#ffffff;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 80%;
+
+}
+.small-container img{
+    width:100px;
+}
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="small-container">
+        <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png" alt="">
+        <div class="button-1">
+            <button class="but">Home</button>
+        <button class="but">About</button>
+        <button class="but">Contact</button>
+        </div>
+        <div class="button-4"><button class="but4">Login</button></div>
+       
+    </div>
+    <div class="big-container">
+        <div class="textsection">
+<h1>Healthy Food</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti atque minus exercitationem quisquam consequatur veniam quaerat asperiores eaque maxime perspiciatis ad, illo quam, eveniet repellat debitis soluta consectetur animi deleniti fuga recusandae dolorum delectus beatae? Nisi nesciunt adipisci, hic illo itaque officiis earum, minima a, ipsam cupiditate tenetur maiores eum quas. Maxime saepe cum voluptatum voluptatem quam labore recusandae!</p>
+<button>Read More</button>       
+</div>
+        <div class="imagesection">
+<img src="https://media.istockphoto.com/id/870173346/photo/healthy-food.jpg?s=612x612&w=0&k=20&c=g6ewhe862ZaSQevMw7VS-VJzwXXEHL6Gqpr-fEDx0jY=" alt="">
+        </div>
+    </div>
+   </div>
+</body>
+</html>
